@@ -36,7 +36,7 @@ module Capybara::Poltergeist
       @path              = Cliver::detect!((options[:path] || PHANTOMJS_NAME),
                                            *PHANTOMJS_VERSION)
 
-      @window_size       = options[:window_size]       || [1440, 1024]
+      @window_size       = options[:window_size]       || [1120, 1024]
       @phantomjs_options = options[:phantomjs_options] || []
       @phantomjs_logger  = options[:phantomjs_logger]  || $stdout
 
